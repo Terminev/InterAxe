@@ -12,5 +12,11 @@
       "id": 3,
       "message": "lorem3, ipsum"
     }
+  ],
+  "Users": [
+    {
+      "id": 1,
+      "test": "123"
+    }
   ]
 }
