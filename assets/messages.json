@@ -1,0 +1,16 @@
+{
+  "messsages": [
+    {
+      "id": 1,
+      "message": "lorem1, ipsum"
+    },
+    {
+      "id": 2,
+      "message": "lorem2, ipsum"
+    },
+    {
+      "id": 3,
+      "message": "lorem3, ipsum"
+    }
+  ]
+}
