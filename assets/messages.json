@@ -51,12 +51,12 @@
       "author":"Lou" ,
       "img": "/img/moustique.jpg",
       "content": "Lorem ipsum dolor sit amet. Et libero nihil et unde deserunt et consectetur debitis. Eum enim voluptas est totam inventore aut fugit optio aut eius laudantium et corrupti nesciunt aut voluptatem veritatis et dolore explicabo.",
-      "description":"POURQUOI PROLIFÈRENT-ILS ENCORE MALGRÉ L'ARRIVÉE DE L'AUTOMNE?",
+      "description":"POURQUOI PROLIFÈRENT-ILS ENCORE MALGRÉ L'ARRIVÉE DE L'AUTOMNE ?",
       "date":"12/09/2021"
     },
     {
       "id": 6,
-      "title": "IL A PLEINEMENT SA PLACE EN FRANCE :"  ,
+      "title": " <IL A PLEINEMENT SA PLACE EN FRANCE >:"  ,
       "author":"Li" ,
       "description":"L'APPEL D'UNE FEMME SAUVÉE PAR UN DEMANDEUR D'ASILE GUINÉEN",
       "date":"10/09/2021",
