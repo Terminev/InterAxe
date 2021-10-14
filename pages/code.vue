@@ -56,6 +56,7 @@
         date: '',
         nbr: 0,
         result: '',
+        chiffre: '7124',
       }
     },
 
@@ -103,7 +104,7 @@
   .code{
     height: 100vh;
     width: 100%;
-    background-image: url("../assets/img/BG.png");
+    background-image: url("../assets/img/BG.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 75vh 105vh;
