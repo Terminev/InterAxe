@@ -89,7 +89,13 @@
         this.result = this.result + chiffre
         console.log(this.result);
         if(this.nbr == 4){
-          console.log("dans la verif");
+          if(this.result == this.chiffre){
+            console.log(this.result);
+            console.log(this.chiffre);
+            window.location.href = '/'
+          }else{
+            this.nbr = 0
+          }
         }
       }
     },

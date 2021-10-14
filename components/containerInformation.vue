@@ -2,7 +2,7 @@
   <div>
     <div v-for="(information, index) in informations" :key="index">
       <NuxtLink :to="'/informations/' + information.id" class="article1">
-        <img class="im" :src="information.img" alt="" />
+        <img class="im" :src="information.img" alt="img article" />
         <!-- <div class="im"></div> -->
         <div class="text">
           <h3>{{ information.title }}</h3>
