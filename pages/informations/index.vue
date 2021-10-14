@@ -27,66 +27,7 @@
     <br />
     <br />
     <div class="article">
-      <div class="article1">
-        <img class="im" src="../../assets/img/EM.jpg" alt="" />
-        <!-- <div class="im"></div> -->
-        <div class="text">
-          <h3>NUCLÉAIRE, HYDROGÈNE ET RENOUVELABLES :</h3>
-          <p>LE PLAN DE MACRON POUR L'ÉNERGIE EN 2030</p>
-        </div>
-      </div>
-
-      <div class="article1">
-        <img src="" alt="" />
-        <img class="im" src="../../assets/img/accident.jpg" alt="" />
-        <div class="text">
-          <h3>DISPARITIONS :</h3>
-          <p>ACCIDENT MORTEL SUR L'AUTOROUTE A7</p>
-        </div>
-      </div>
-
-      <div class="article1">
-        <img class="im" src="../../assets/img/ecole.jpg" alt="" />
-        <div class="text">
-          <h3>PARIS:</h3>
-          <p>6000 ÉCOLIERS EN MOINS EN UN AN, UNE BAISSE INÉDITE</p>
-        </div>
-      </div>
-
-      <div class="article1">
-        <img class="im" src="../../assets/img/grece.jpg" alt="" />
-        <div class="text">
-          <h3>GRÈCE:</h3>
-          <p>SÉISME DE 6,3 AU LARGE DE LA CRÈTE</p>
-        </div>
-      </div>
-
-      <div class="article1">
-        <img class="im" src="../../assets/img/moustique.jpg" alt="" />
-        <div class="text">
-          <h3>MOUSTIQUES:</h3>
-          <p>POURQUOI PROLIFÈRENT-ILS ENCORE MALGRÉ L'ARRIVÉE DE L'AUTOMNE?</p>
-        </div>
-      </div>
-
-      <div class="article1">
-        <img class="im" src="../../assets/img/naturalisation.jpg" alt="" />
-        <div class="text">
-          <h3>"IL A PLEINEMENT SA PLACE EN FRANCE":</h3>
-          <p>L'APPEL D'UNE FEMME SAUVÉE PAR UN DEMANDEUR D'ASILE GUINÉEN</p>
-        </div>
-      </div>
-
-      <div class="article1">
-        <img class="im" src="../../assets/img/ME.jpg" alt="" />
-        <div class="text">
-          <h3>FRANCE 2030:</h3>
-          <p>
-            A QUOI SERVIRONT LES 30 MILLIARDS D'EUROS ANNONCÉS PAR EMMANUEL
-            MACRON?
-          </p>
-        </div>
-      </div>
+      <container-information />
     </div>
 
     <footer>
