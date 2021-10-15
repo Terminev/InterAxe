@@ -1,6 +1,6 @@
 <template>
   <div class="code">
-    <nav-component-white/>
+    <nav-component-white />
     <div class="infos">
       <img src="../assets/img/Icon awesome-lock.png" alt="lock">
       <h2>{{heure}}</h2>
@@ -45,6 +45,12 @@
         <p @click="add(0)">0</p>
       </div>
     </div>
+    <div class="error" id="error">
+      <div class="errorMessage">
+        <img src="../assets/img/cancel.png" alt="cross" class="close" @click="closeError()">
+        <h2>Le code est incorrect !</h2>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -65,13 +71,15 @@
       var minutes = date.getMinutes()
       var hour = date.getHours()
       var jour = date.getDate()
-      let months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Decembre"]
+      let months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre",
+        "Novembre", "Decembre"
+      ]
       var month = months[date.getMonth()]
       var actualYear = date.getFullYear();
 
-      if(jour <10){
+      if (jour < 10) {
         this.date = "0" + jour + ' ' + month + ' ' + actualYear
-      }else{
+      } else {
         this.date = jour + ' ' + month + ' ' + actualYear
       }
 
@@ -83,31 +91,42 @@
     },
 
     methods: {
-      add(chiffre){
+      add(chiffre) {
         console.log(chiffre);
         this.nbr += 1
         this.result = this.result + chiffre
         console.log(this.result);
-        if(this.nbr == 4){
-          if(this.result == this.chiffre){
+        if (this.nbr == 4) {
+          if (this.result == this.chiffre) {
             console.log(this.result);
             console.log(this.chiffre);
             window.location.href = '/'
-          }else{
+          } else {
             this.nbr = 0
+            this.result = ''
+            var error = document.getElementById("error")
+            error.style.display = "flex"
           }
         }
+      },
+      closeError(){
+        var error = document.getElementById("error")
+        error.style.display = "none"
       }
     },
   }
+
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-  *{
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  * {
     font-family: Roboto;
   }
-  .code{
+
+  .code {
+    position: relative;
     height: 100vh;
     width: 100%;
     background-image: url("../assets/img/BG.jpg");
@@ -115,31 +134,69 @@
     background-repeat: no-repeat;
     background-size: 75vh 105vh;
   }
-  img{
+
+  img {
     width: 31px;
     height: 36px;
   }
-  h2{
+
+  .close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 395px;
+    right: 52px;
+  }
+
+  h2 {
     color: white;
     font-size: 70px;
     font-weight: 300;
   }
+
+  .error {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: none;
+  }
+
+  .errorMessage {
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color: rgb(187, 187, 187);
+    width: 80%;
+    margin: auto;
+    display: flex;
+  }
+
+  .errorMessage h2 {
+    font-size: 35px !important;
+    text-align: center;
+  }
+
   .infos p {
     font-size: 23px;
     color: white;
   }
-  .infos{
+
+  .infos {
     text-align: center;
     padding-top: 55px;
   }
-  .container{
+
+  .container {
     text-align: center;
     color: white;
   }
+
   .container p {
     font-size: 23px;
   }
-  .chiffres p{
+
+  .chiffres p {
     font-size: 32px;
     padding: 15px 30px;
     border-radius: 40px;
@@ -148,6 +205,7 @@
     opacity: 0.8;
     cursor: pointer;
   }
+
   .chiffres {
     display: flex;
     flex-wrap: wrap;
@@ -155,24 +213,27 @@
     width: 90%;
     margin: 10px auto;
   }
-  .circle{
+
+  .circle {
     width: 18px;
     height: 18px;
     border: solid 2px #FFFFFF;
     border-radius: 40px;
   }
-  .circleFull{
+
+  .circleFull {
     width: 18px;
     height: 18px;
     border: solid 2px #FFFFFF;
     border-radius: 40px;
     background-color: white;
   }
-  .containCircle{
+
+  .containCircle {
     display: flex;
     width: 30%;
     margin: 10px auto;
     justify-content: space-between;
   }
-</style>
 
+</style>

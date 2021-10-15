@@ -52,6 +52,10 @@
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  *{
+    font-family: Roboto;
+  }
   .infos {
     display: flex;
     align-items: center;
